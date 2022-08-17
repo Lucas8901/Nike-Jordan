@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Lexend+Deca:wght@400;600&family=Montserrat:wght@500;600;700&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root{
+  --prymary:hsla(0, 0%, 3%, 0.65);
+  --secondary:hsla(0, 0%, 9%, 0.65);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Montserrat', Arial, Helvetica, sans-serif ;
+}
+
+body{
+  background: #F9F9F9;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.header{
+  width: 100%;
+  font-display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.topo{
+  background: #181818;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 196.19%;
+  color: #F9F9F9;
+}
+.sub-topo{
+  background: #F9F9F9;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 196.19%;
+  color: #181818;
+}
+
+.content-main{
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 500px;
+ background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+}
+
+.d{
+  width: 100%;
+ position: absolute;
+ top:35%;
+ left: 7%;
+}
+.d p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 196.19%;
+  color: #F9F9F9;
+}
+.d h1{
+  color: #F9F9F9;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.container-prd{
+  width: 100%;
+  background: #F9F9F9;
+}
+.topo-produtos{
+  margin: 60px;
+  text-align:center;
+}
+
+.topo-produtos h1{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 196.19%;
+}
+.topo-produtos p{
+  color: #474747;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 196.19%;
+}
+.container-produtos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.container-produtos{
+  position: relative;
+}
+.container-produtos .card{
+  position: relative;
+  width: 280px;
+  height: 450px;
+  background:#eeeeee ;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container-produtos .card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #23704c;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#6e4e8d;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#5d2d94;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#050505;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-4::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#5a133a;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-5::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#fd5c34;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-6::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#d4d4d4;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-produtos .cor-7::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#3b3b3b;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+.container-produtos .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container-produtos .card::after{
+  content: 'Nike';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color:rgba(17, 17, 17, 0.123);
+}
+.container-produtos .card .imgbx{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container-produtos .card:hover .imgbx{
+  top: 0%;
+  transform: translateY(0%);
+}
+
+
+.container-produtos .card .imgbx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-22deg);
+  width: 270px;
+}
+.container-produtos .card .contentbx{
+ position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+.container-produtos .card:hover .contentbx{
+  height: 210px;
+}
+
+.container-produtos .card .contentbx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(163, 163, 163);
+}
+
+.container-produtos .card .contentbx .size,
+.container-produtos .card .contentbx .color{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.container-produtos .card:hover .contentbx .size{
+  opacity: 1;
+  visibility:visible;
+ transition-delay: 0.5s;
+}
+
+.container-produtos .card:hover .contentbx .color{
+  opacity: 1;
+  visibility:visible;
+ transition-delay: 0.6s;
+}
+
+.container-produtos .card .contentbx .size h3,
+.container-produtos .card .contentbx .color h3{
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+
+
+.container-produtos .card .contentbx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-produtos .card .contentbx .size span:hover{
+  background: #9bdc28;
+}
+
+.container-produtos .card .contentbx .color span{
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container-produtos .card .contentbx .color span:nth-child(2){
+  background: #9bdc28;
+}
+
+.container-produtos .card .contentbx .color span:nth-child(3){
+  background: #03a9f4;
+}
+
+.container-produtos .card .contentbx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(71, 71, 71);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+
+
+.container-produtos .card:hover .contentbx a{
+  opacity: 1;
+  transform: translateY(0px);
+ 
+ 
+}
+
+footer{
+  background: #181818;
+  color: #F9F9F9;
+  text-align: center;
+  padding: 10px;
+  margin-top: 112px;
+}
+
+footer p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 196.19%;
+}
+
+
+@media (max-width: 1024px){
+  .container-produtos .card{
+    position: relative;
+    width: 290px;
+    height: 450px;
+    background:#eeeeee ;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .d{
+  width: 100%;
+   position: absolute;
+   top:45%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 22px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 30px;
+    font-size: 48px;
+  }
+
+  .topo-produtos h1{
+    font-size: 48px;
+  }
+
+  .topo-produtos p{
+    font-size: 23px;
+  }
+
+  footer p{
+    font-size: 22px;
+    line-height: 196.19%;
+    padding: 10px;
+  }
+
+  footer{
+    margin-top: 60px;
+  }
+
+  .topo{
+    font-size: 0px;
+  }
+  .sub-topo{
+    font-size: 20px;
+    line-height: 196.19%;
+  }
+
+  .flex{
+    width: 480px;
+    background: #EBE9EA;
+    margin: 5px;
+    
+  }
+
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 800px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+
+@media (max-width: 768px){
+  .container-produtos .card{
+    position: relative;
+    width: 340px;
+    height: 450px;
+    background:#eeeeee ;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .d{
+  width: 100%;
+   position: absolute;
+   top:45%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 20px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 10px;
+    font-size: 38px;
+  }
+
+  .topo-produtos h1{
+    font-size: 38px;
+  }
+
+  .topo-produtos p{
+    font-size: 20px;
+  }
+
+  footer p{
+    font-size: 18px;
+    line-height: 196.19%;
+    padding: 10px;
+  }
+
+  footer{
+    margin-top: 60px;
+  }
+
+  .topo{
+    font-size: 14px;
+  }
+  .sub-topo{
+    font-size: 14px;
+    line-height: 196.19%;
+  }
+
+  .flex{
+    width: 680px;
+    background: #EBE9EA;
+    margin: 15px;
+    
+  }
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 700px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+
+
+@media (max-width: 696px){
+  .container-produtos .card{
+    position: relative;
+    width: 280px;
+    height: 450px;
+    background:#eeeeee ;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .d{
+  width: 100%;
+   position: absolute;
+   top:35%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 17px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .topo-produtos h1{
+    font-size: 22px;
+  }
+
+  .topo-produtos p{
+    font-size: 11px;
+  }
+
+  footer p{
+    font-size: 15px;
+    line-height: 196.19%;
+  }
+
+  footer{
+    margin-top: 60px;
+  }
+
+  .topo{
+    font-size: 14px;
+  }
+  .sub-topo{
+    font-size: 14px;
+    line-height: 196.19%;
+  }
+
+  .flex{
+    width: 450px;
+    background: #EBE9EA;
+    margin: 0 25px;
+    
+  }
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 400px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+@media (max-width: 425px){
+  .container-produtos .card{
+    position: relative;
+    width: 380px;
+    height: 450px;
+    background:#eeeeee ;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .d{
+  width: 100%;
+   position: absolute;
+   top:35%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 17px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .topo-produtos h1{
+    font-size: 22px;
+  }
+
+  .topo-produtos p{
+    font-size: 11px;
+  }
+
+  footer p{
+    font-size: 15px;
+    line-height: 196.19%;
+  }
+
+  footer{
+    margin-top: 60px;
+  }
+
+  .topo{
+    font-size: 14px;
+  }
+  .sub-topo{
+    font-size: 14px;
+    line-height: 196.19%;
+  }
+
+  .flex{
+    width: 450px;
+    background: #EBE9EA;
+    margin: 0 25px;
+    
+  }
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 400px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+
+@media (max-width: 390px){
+  .d{
+    width: 100%;
+   position: absolute;
+   top:35%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 13px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  
+
+  .topo-produtos h1{
+    font-size: 22px;
+  }
+
+  .topo-produtos p{
+    font-size: 11px;
+  }
+
+  footer p{
+    font-size: 14px;
+    line-height: 196.19%;
+  }
+
+  footer p{
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .topo{
+    font-size: 10px;
+  }
+  .sub-topo{
+    font-size: 10px;
+    line-height: 196.19%;
+  }
+
+  .flex{
+    width: 450px;
+    background: #EBE9EA;
+    margin: 0 20px;
+    
+  }
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 350px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+
+
+@media (max-width: 375px){
+  .container-produtos .card{
+    position: relative;
+    width: 330px;
+    height: 450px;
+    background:#eeeeee ;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .d{
+    width: 100%;
+   position: absolute;
+   top:35%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 13px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .topo-produtos h1{
+    font-size: 22px;
+  }
+
+  .topo-produtos p{
+    font-size: 11px;
+  }
+
+  footer p{
+    font-size: 14px;
+    line-height: 196.19%;
+  }
+
+  footer p{
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .topo{
+    font-size: 10px;
+  }
+  .sub-topo{
+    font-size: 10px;
+    line-height: 196.19%;
+  }
+
+  .flex{
+    width: 450px;
+    background: #EBE9EA;
+    margin: 0 20px;
+    
+  }
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 350px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+@media (max-width: 320px){
+  .container-produtos{
+    position: relative;
+    width: 270px;
+    height: 450px;
+    margin: 0 auto;
+  }
+   
+  .d{
+    width: 100%;
+   position: absolute;
+   top:35%;
+   left: 6%;
+   text-align: left;
+  }
+  .d p{
+    font-size: 13px;
+    color: #F9F9F9;
+  }
+  .d h1{
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .topo-produtos h1{
+    font-size: 22px;
+  }
+
+  .topo-produtos p{
+    font-size: 11px;
+  }
+
+  footer{
+    margin-top: 3350px;
+    padding: 5px;
+  }
+
+
+
+  .topo{
+    font-size: 10px;
+  }
+  .sub-topo{
+    font-size: 10px;
+    line-height: 196.19%;
+  }
+
+
+  .content-main{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 350px;
+   background: linear-gradient(135deg, var(--prymary), var(--secondary)), url('./img/wallpaper.jpeg') no-repeat center center / cover;
+  }
+
+  .topo-produtos{
+    margin: 40px;
+  }
+}
+
+
